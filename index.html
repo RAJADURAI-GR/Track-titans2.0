@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Railway Track Fitting QR Prototype</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      margin: 0;
+      padding: 0;
+      background-color: #2c3e50;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+      width: 350px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .card h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    .qr-box img {
+      width: 180px;
+      height: 180px;
+    }
+    .details {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .details p {
+      margin: 6px 0;
+      padding: 8px;
+      background: #ecf0f1;
+      border-radius: 6px;
+    }
+    .alert {
+      color: red;
+      font-weight: bold;
+    }
+    /* Flowchart Section */
+    .flowchart {
+      margin: 40px 0;
+      text-align: center;
+    }
+    .flowchart h3 {
+      color: #2c3e50;
+    }
+    .flow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .flow div {
+      background: #3498db;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin: 10px;
+      min-width: 120px;
+      text-align: center;
+      font-size: 14px;
+      position: relative;
+    }
+    .flow div::after {
+      content: "➝";
+      position: absolute;
+      right: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #2c3e50;
+    }
+    .flow div:last-child::after {
+      content: "";
+    }
+    /* Track fitting images */
+    .fittings {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .fittings h3 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    .fitting-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .fitting-grid img {
+      width: 150px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- QR Prototype -->
+    <div class="card">
+      <h2>Track Fitting QR Prototype</h2>
+      <div class="qr-box">
+        <!-- Replace this with your generated QR -->
+        <img src="your_qr.png" alt="QR Code">
+      </div>
+      <div class="details">
+        <p><strong>Vendor ID:</strong> VND12345</p>
+        <p><strong>Lot No:</strong> LOT56789</p>
+        <p><strong>Supply Date:</strong> 25-Sep-2023</p>
+        <p><strong>Warranty Period:</strong> 2 Years</p>
+        <p class="alert"><strong>Warranty Alert:</strong> Expiring Soon</p>
+        <p><strong>Inspection History:</strong> Checked on 15-Jan-2024</p>
+      </div>
+    </div>
+
+    <!-- Flowchart -->
+    <div class="flowchart">
+      <h3>QR Identification Workflow</h3>
+      <div class="flow">
+        <div>Attach QR to Fitting</div>
+        <div>Scan with Mobile</div>
+        <div>Fetch from DB</div>
+        <div>Show Vendor & History</div>
+      </div>
+    </div>
+
+    <!-- Track Fitting Images -->
+    <div class="fittings">
+      <h3>Examples of Track Fittings</h3>
+      <div class="fitting-grid">
+        <img src="WhatsApp Image 2025-09-25 at 10.09.41_7b870442.jpg" alt="Rail Clip">
+        <img src="WhatsApp Image 2025-09-25 at 10.12.28_3708e273.jpg" alt="Rail Pad">
+        <img src="WhatsApp Image 2025-09-25 at 10.15.07_768205eb.jpg" alt="Rail Fastening">
+        <img src="Rail-Clip-Railway-Fastening-Systems[1].avif" alt="Concrete Sleeper">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
